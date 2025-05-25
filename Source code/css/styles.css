@@ -1,0 +1,39 @@
+/* General Body Styles */
+body {
+    padding-top: 56px; /* Adjust based on your navbar height */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Hero Section (Home Page) */
+.hero-section {
+    background: url('../images/hero-background.jpg') no-repeat center center; /* Add a relevant background image */
+    background-size: cover;
+    height: 70vh; /* Adjust height as needed */
+    color: #fff;
+    /* Add a subtle overlay for better text readability */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Page Headers (for other pages) */
+.page-header {
+    background-color: #343a40; /* Dark background for headers */
+    padding: 4rem 0; /* Adjust padding as needed */
+    margin-bottom: 2rem;
+}
+
+/* Service Section Styling */
+.service-section {
+    background-color: #f8f9fa; /* Light grey background for service sections */
+}
