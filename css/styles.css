@@ -2,6 +2,7 @@
 body {
     padding-top: 56px; /* Adjust based on your navbar height */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ebe3cc;
 }
 
 /* Navigation Bar */
@@ -33,7 +34,240 @@ body {
     margin-bottom: 2rem;
 }
 
+#about-section{
+    background-color: rgb(84, 87, 87);
+}
+
 /* Service Section Styling */
 .service-section {
     background-color: #f8f9fa; /* Light grey background for service sections */
+}
+
+/* Service section backgrounds */
+#service-architecture {
+    background: url('../images/services/image-architecture.png') center center/cover no-repeat;
+    color: #fff;
+    border-radius: 10px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+#service-interior {
+    background: url('../images/services/image-interior.png') center center/cover no-repeat;
+    color: #fff;
+    border-radius: 10px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+#service-construction {
+    background: url('../images/services/image-construction.png') center center/cover no-repeat;
+    color: #fff;
+    border-radius: 10px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+#service-quality {
+    background: url('../images/services/image-quality.png') center center/cover no-repeat;
+    color: #fff;
+    border-radius: 10px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+#services-highlights .col-md-4 h4, #services-highlights .col-md-4 p {
+    background: rgba(0,0,0,0.45);
+    border-radius: 6px;
+    padding: 0.5em 0.75em;
+    margin: 0.5em 0;
+}
+#services-highlights .col-md-4 {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 1rem;
+}
+#services-highlights .row {
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    #services-highlights .col-md-4:not(:last-child) {
+        margin-right: 1.5rem;
+    }
+}
+
+/* Carousel Image Styles */
+#homeCarousel .carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    #homeCarousel .carousel-item img {
+        height: 220px;
+    }
+}
+
+/* About Section Styling */
+.about-section {
+    background: linear-gradient(90deg, #f8fafc 60%, #e3e9f3 100%);
+    min-height: 320px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+    border-radius: 16px;
+}
+.about-section h2 {
+    font-weight: 700;
+    color: #1a237e;
+}
+.about-section .lead {
+    color: #333;
+    font-size: 1.15rem;
+}
+.about-img-placeholder {
+    background: #e0e0e0;
+    border: 2px dashed #b0b0b0;
+    min-height: 220px;
+    max-width: 100%;
+    object-fit: cover;
+}
+.section-divider {
+    border: none;
+    border-top: 2px solid #d1d5db;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.7;
+}
+
+/* Specialization Section Styling */
+.specialization-section {
+    background: #fff;
+    box-shadow: 0 2px 24px 0 rgba(0,0,0,0.06);
+    border-radius: 18px;
+    min-height: 340px;
+    position: relative;
+}
+.specialization-img {
+    background: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.specialization-title {
+    font-weight: 700;
+    color: #222;
+    font-size: 2.2rem;
+}
+.specialization-underline {
+    width: 60px;
+    height: 4px;
+    background: #ff6600;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+}
+.specialization-desc {
+    color: #555;
+    font-size: 1.08rem;
+}
+.specialization-list h5 {
+    color: #222;
+}
+.specialization-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+}
+@media (max-width: 767.98px) {
+    .specialization-section .row {
+        flex-direction: column;
+    }
+    .specialization-img {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Quality Services Section */
+.services-header {
+    margin-bottom: 2rem;
+}
+
+.services-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a237e;
+}
+
+.view-all-link {
+    color: #666;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.view-all-link:hover {
+    color: #ff6600;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.service-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.service-content {
+    padding: 1.5rem;
+}
+
+.service-content h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.8rem;
+}
+
+.service-content p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .service-img {
+        height: 200px;
+    }
+    
+    .services-title {
+        font-size: 2rem;
+    }
 }

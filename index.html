@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -43,42 +43,169 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-section text-white text-center d-flex align-items-center justify-content-center">
+    <!-- <header class="hero-section text-white text-center d-flex align-items-center justify-content-center">
         <div class="container">
             <h1>Building Your Visions, Creating Reality</h1>
             <p class="lead">Your trusted partner in construction and project management.</p>
             <a href="projects.html" class="btn btn-primary btn-lg mt-3">View Our Projects</a>
         </div>
-    </header>
+    </header> -->
+
+    <!-- Image Carousel -->
+    <div id="homeCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/image-c1.png" class="d-block w-100" alt="Project 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Modern Architecture</h5>
+                    <p>Innovative designs for the future.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/image-c2.png" class="d-block w-100" alt="Project 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Quality Construction</h5>
+                    <p>Building with precision and care.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/image-c3.png" class="d-block w-100" alt="Project 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Project Management</h5>
+                    <p>Efficient and transparent processes.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- End Image Carousel -->
 
     <!-- Main Content -->
     <main class="container mt-5 mb-5">
-        <section id="about-short" class="text-center mb-5">
-            <h2>Welcome to DESCON</h2>
-            <p class="lead">We are a premier construction company dedicated to providing top-quality services and innovative solutions for all your building needs. With years of experience and a commitment to excellence, we turn your architectural dreams into tangible realities.</p>
+        <section id="about-section" class="about-section d-flex align-items-center p-4 mb-5 rounded">
+            <div class="row w-100 align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h2 class="mb-3">Welcome to DESCON</h2>
+                    <p class="lead">We are a premier construction company dedicated to providing top-quality services and innovative solutions for all your building needs. With years of experience and a commitment to excellence, we turn your architectural dreams into tangible realities.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="images/image-c1.png" alt="About DESCON" class="img-fluid rounded shadow about-img-placeholder" style="max-height:320px; object-fit:cover;">
+                </div>
+            </div>
         </section>
 
-        <section id="services-highlights" class="mb-5">
-            <h2 class="text-center mb-4">Our Core Services</h2>
-            <div class="row">
-                <div class="col-md-4 text-center mb-3">
-                    <h4>Architectural Design</h4>
-                    <p>Innovative and functional designs tailored to your needs.</p>
+        <!-- Specialization Section -->
+        <section id="specialization-section" class="specialization-section d-flex align-items-center p-4 mb-5 rounded">
+            <div class="row w-100 align-items-center">
+                <div class="col-md-6 text-center mb-4 mb-md-0">
+                    <img src="images/image-c1.png" alt="Specialization" class="img-fluid rounded shadow specialization-img" style="max-height:340px; object-fit:cover;">
                 </div>
-                <div class="col-md-4 text-center mb-3">
-                    <h4>Project Management</h4>
-                    <p>Efficient and transparent management from start to finish.</p>
+                <div class="col-md-6">
+                    <h2 class="mb-3 specialization-title">Our Specialization</h2>
+                    <div class="specialization-underline mb-3"></div>
+                    <p class="specialization-desc mb-4">You can use these sections to highlight the features of heading. Use these paragraphs to focus on the topic you want. Make sure you keep it short and attractive.</p>
+                    <div class="specialization-list">
+                        <div class="d-flex align-items-start mb-4">
+                            <span class="specialization-icon me-3"><!-- icon --><svg width="28" height="28" fill="#ff6600" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="#ff6600" stroke-width="2"/></svg></span>
+                            <div>
+                                <h5 class="mb-1 fw-bold">Architecture</h5>
+                                <p class="mb-0">A short description to prove that you are the best.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-4">
+                            <span class="specialization-icon me-3"><!-- icon --><svg width="28" height="28" fill="#ff6600" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="#ff6600" stroke-width="2"/><path d="M7 17l10-10M7 7h10v10" stroke="#ff6600" stroke-width="2"/></svg></span>
+                            <div>
+                                <h5 class="mb-1 fw-bold">Landscape Design</h5>
+                                <p class="mb-0">A short description to prove that you are the best.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-4">
+                            <span class="specialization-icon me-3"><!-- icon --><svg width="28" height="28" fill="#ff6600" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="#ff6600" stroke-width="2"/><rect x="7" y="7" width="10" height="10" fill="none" stroke="#ff6600" stroke-width="2"/></svg></span>
+                            <div>
+                                <h5 class="mb-1 fw-bold">Exterior Design</h5>
+                                <p class="mb-0">A short description to prove that you are the best.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4 text-center mb-3">
-                    <h4>Quality Construction</h4>
-                    <p>Building with precision, durability, and the highest standards.</p>
-                </div>
-            </div>
-            <div class="text-center mt-3">
-                <a href="services.html" class="btn btn-secondary">Explore All Services</a>
             </div>
         </section>
-    </main>
+        <hr class="section-divider my-5">
+        <section id="services-highlights" class="mb-5">
+            <div class="services-header d-flex justify-content-between align-items-center mb-4">
+                <h2 class="services-title">Quality Services</h2>
+                <a href="services.html" class="view-all-link">VIEW ALL →</a>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="images/services/image-architecture.png" alt="Land Planning" class="service-img">
+                        <div class="service-content">
+                            <h3>Land Planning</h3>
+                            <p>Expert land planning and development solutions for optimal space utilization and sustainable design.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="images/services/image-construction.png" alt="Building Staff" class="service-img">
+                        <div class="service-content">
+                            <h3>Building Staff</h3>
+                            <p>Professional construction teams and skilled labor for efficient project execution.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="images/services/image-quality.png" alt="Material Supply" class="service-img">
+                        <div class="service-content">
+                            <h3>Material Supply</h3>
+                            <p>High-quality construction materials and reliable supply chain management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="images/services/image-interior.png" alt="Consultancy" class="service-img">
+                        <div class="service-content">
+                            <h3>Consultancy</h3>
+                            <p>Expert advice and guidance for construction and development projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="images/services/image-architecture.png" alt="Architecture" class="service-img">
+                        <div class="service-content">
+                            <h3>Architecture</h3>
+                            <p>Innovative architectural designs that blend form and function seamlessly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="images/services/image-construction.png" alt="Crane Service" class="service-img">
+                        <div class="service-content">
+                            <h3>Crane Service</h3>
+                            <p>Reliable crane and heavy equipment services for construction projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> 
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center p-3">
